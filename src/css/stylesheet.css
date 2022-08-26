@@ -1,0 +1,452 @@
+/*
+
+
+
+
+
+NAVBAR
+
+
+
+
+
+
+*/
+
+.barR {
+  width: 25px;
+  height: 10px;
+  border-top: 3px solid #ff6600;
+  border-bottom: 3px solid #ff6600;
+  border-right: 3px solid #ff6600;
+  border-radius: 0px 20px 20px 0px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  margin: -2.5px;
+}
+.barL {
+  width: 25px;
+  height: 10px;
+  border-top: 3px solid #ff6600;
+  border-bottom: 3px solid #ff6600;
+  border-left: 3px solid #ff6600;
+  border-radius: 20px 0px 0px 20px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  margin: -2.5px;
+}
+.barD {
+  width: 47.5px;
+  height: 10px;
+  border: 3px solid #ff6600;
+  border-radius: 20px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  margin: -2.5px;
+}
+.barSet {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  transition: 0.5s;
+}
+.open-bar1 {
+  width: 25px;
+  height: 10px;
+  background: none;
+  border-radius: 20px 0px 0px 20px;
+  border-top: 3px solid #ff6600;
+  border-bottom: 3px solid #ff6600;
+  border-left: 3px solid #ff6600;
+  top: -4.5px;
+  left: -2px;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 1s;
+  transform: rotate(-315deg);
+}
+.open-bar2 {
+  width: 25px;
+  height: 10px;
+  background: none;
+  border-radius: 0px 20px 20px 0px;
+  border-top: 3px solid #ff6600;
+  border-bottom: 3px solid #ff6600;
+  border-right: 3px solid #ff6600;
+  margin: -1.4px;
+  left: -2.5px;
+  top: -3px;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 1s;
+  transform: rotate(315deg);
+}
+
+.open-bar4 {
+  width: 47.5px;
+  height: 10px;
+  background: none;
+  border-radius: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  opacity: 0;
+  top: -50px;
+  transition: all 1s;
+}
+.open-bar5 {
+  width: 25px;
+  height: 10px;
+  background: none;
+  border-radius: 20px 0px 0px 20px;
+  border-top: 3px solid #ff6600;
+  border-bottom: 3px solid #ff6600;
+  border-left: 3px solid #ff6600;
+  left: -1.5px;
+  top: -3px;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 1s;
+  transform: rotate(-405deg);
+}
+.open-bar6 {
+  width: 25px;
+  height: 10px;
+  background: none;
+  border-radius: 0px 20px 20px 0px;
+  border-top: 3px solid #ff6600;
+  border-bottom: 3px solid #ff6600;
+  border-right: 3px solid #ff6600;
+  left: -4.4px;
+  top: -2.4px;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 1s;
+  transform: rotate(405deg);
+}
+#navbutton-container {
+  cursor: pointer;
+  position: fixed;
+  margin-left: 40px;
+  top: 50px;
+}
+
+.opened-nav {
+  top: 50px;
+  left: -20px;
+  width: 450px;
+  height: auto;
+  background-color: rgba(51, 51, 51, 0.344);
+  z-index: 10;
+  position: fixed;
+  transition: all 0.8s;
+  text-decoration: none;
+}
+
+.closed-nav {
+  top: 50px;
+  left: -20px;
+  width: 0;
+  height: auto;
+  background-color: rgba(51, 51, 51, 0.344);
+  z-index: 10;
+  position: fixed;
+  transition: all 0.8s;
+  overflow-x: hidden;
+  text-decoration: none;
+}
+
+#nav-list-items {
+  text-decoration: none;
+  color: #bb4b00;
+  list-style-type: none;
+  text-align: center;
+  font-family: "Agency FB", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: large;
+}
+#nav-list-items ul li {
+  list-style-type: none;
+  box-sizing: border-box;
+}
+#nav-list-items a {
+  font-size: x-large;
+  text-decoration: none;
+  color: #bb4b00;
+}
+#nav-list-items a:hover {
+  font-size: x-large;
+  text-decoration: underline;
+  color: #ff6600;
+  cursor: pointer;
+}
+
+/*
+
+
+
+
+
+
+HEADER POSITIONING/ELEMENT STYLING
+
+
+
+
+
+*/
+#headerContainer {
+  display: flex;
+  justify-content: center;
+  width: 104%;
+  min-width: 440px;
+  height: 150px;
+  box-shadow: -20px 40px 50px #333333;
+  background-color: #333333;
+  padding: 10px;
+  margin: auto;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-bottom: 10px solid #ff6600;
+  top: 0px;
+  position: absolute;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+#headerContainer h1 {
+  font-family: "Market Street Personal Use", " Agency FB";
+  box-sizing: border-box;
+  font-size: 60px;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 40%;
+  color: #ff6600;
+}
+#social-icons {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: row;
+}
+.social-group {
+  display: flex;
+  flex-direction: column;
+}
+/*
+
+
+
+
+
+
+BODY CONTAINER STYLING/POSTIONING
+
+
+
+
+*/
+
+#bodyContainer {
+  background: rgba(51, 51, 51, 0.7);
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  margin-left: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 300px;
+  overflow-x: hidden;
+  align-content: center;
+}
+
+/*
+
+
+
+
+BODY BUTTONS
+
+
+
+
+*/
+
+#bodyContainer button {
+  padding: 15px;
+  width: 240px;
+  background: black;
+  font-family: "Market Street Personal Use";
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: 0.4s;
+  margin-top: -80px;
+  margin-bottom: 100px;
+  display: block;
+}
+#bodyContainer button:hover {
+  color: #ff6600;
+  background-color: #333333;
+  box-shadow: 10px 10px 5px #ff6600;
+  transition: 0.4s;
+  margin-left: -5px;
+  margin-top: -90px;
+  cursor: pointer;
+}
+#bodyContainer button:active {
+  color: #333333;
+  background-color: #ff6600;
+  transition: 0.2s;
+  box-shadow: 5px 5px 2px black;
+  margin-left: 0px;
+  margin-top: -80px;
+}
+.vidContainer:hover {
+  box-shadow: 0px 0px 20px 20px #ff6600;
+  transition: 0.4s;
+}
+/*
+
+
+
+
+
+FORM STYLING 
+
+
+
+
+
+*/
+.form * {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+.form input {
+  min-width: 400px;
+  width: 40%;
+}
+input {
+  background-color: #33333382;
+  border: none;
+  color: white;
+  font-family: "Agency FB", "Arial", sans-serif;
+}
+input:hover {
+  border: 1px solid #1c1c1c3a;
+}
+.form input:focus {
+  outline: 2px solid #ff6600;
+}
+h1 {
+  text-align: center;
+  font-family: "Market Street Personal Use";
+  color: #ff6600;
+}
+.form button {
+  font-family: "Market Street Personal Use";
+  margin-bottom: 100px;
+}
+.formButton {
+  min-width: 200px;
+  width: 30%;
+  border: none;
+  background: #333333;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.buttonActive {
+  color: #333333;
+  background-color: #ff6600;
+  box-shadow: 2px 10px #333333;
+  border-radius: 10px;
+  min-width: 200px;
+  margin-top: 35px;
+  width: 30%;
+  border: none;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.buttonActive:active {
+  margin-top: 50px;
+  box-shadow: 2px 3px #bb4b00;
+  transition: 0.2s;
+}
+/* 
+
+
+
+
+
+
+FOOTER 
+
+
+
+
+
+*/
+#footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  background-color: #333333;
+  border: 10px solid #333333;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  box-shadow: 0px -10px 30px 20px #ff6600;
+}
+#footerContainer p {
+  color: #ff6600;
+  font-family: "Agency FB", "Arial", sans-serif;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.link a {
+  box-shadow: inset 0 0 0 0 #ff6600;
+  color: #ff6600;
+  display: inline;
+  font-size: large;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.link a:hover {
+  box-shadow: inset 120px 0 0 0 #ff6600;
+  color: #333333;
+}
+#social-icons a {
+  margin: 2.5px;
+}
+#social-icons a:hover {
+  scale: 1.1;
+}
+/*
+
+
+
+
+
+VIEWPORT MANIPULATION
+
+
+
+
+*/
+@media screen and (max-width=500px) {
+  #footerContainer p,
+  #footerContainer a {
+    font-size: medium;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
